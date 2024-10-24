@@ -7,6 +7,9 @@ body {
   font-weight: 300;
 }
 
+.rubik-400 {
+  font-weight: 400;
+}
 .rubik-600 {
   font-weight: 600;
 }
@@ -66,6 +69,10 @@ body {
 .menu-nav li {
   display: inline-block;
   transition: background-color 1s;
+}
+
+.menu-nav a {
+  display: inline-block;
   padding: 15px 35px;
 }
 
@@ -91,6 +98,25 @@ body {
 
 .menu-button:hover {
   background-color: #a7d9fc9c;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1 {
+  margin-top: 0;
+  color: #127abf;
+}
+
+footer {
+  height: 50px;
+  background-color: #127abf9f;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 @media (max-width: 975px) {
@@ -135,22 +161,6 @@ body {
     line-height: 2;
     background-color: #127abf;
   }
-}
-
-
-
-main {
-  flex-grow: 1;
-}
-
-footer {
-  height: 50px;
-  background-color: #127abf9f;
-  color: aliceblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
 }
 
 @media (max-width: 900px) {

@@ -99,15 +99,94 @@
     </nav>
 
     <main class="container">
-      <div class="schedule-grid">
-        <div class="mon">ПН</div>
-        <div class="tue">ПН</div>
-        <div class="wed">ПН</div>
-        <div class="thu">ПН</div>
-        <div class="fri">ПН</div>
-        <div class="sat">ПН</div>
-        <div class="sun">ПН</div>
-      </div>
+      <section class="schedule-filter">
+        <div class="form">
+          <label for="teacher-select">ФИО преподавателя</label>
+          <select name="teacher" id="teacher-select">
+            <option value="1">Голенкова Светлана Александровна</option>
+            <option value="2">Климешина Ангелина Александровна</option>
+            <option value="3">Кульбякина Олеся Аркадьевна</option>
+            <option value="4" selected>Лебедев Константин Игоревич</option>
+            <option value="5">Раздобреева Мария Николаевна</option>
+            <option value="6">Тюрякина Анастасия Сергеевна</option>
+            <option value="7">Тюрякина Анастасия Сергеевна</option>
+            <option value="8">Уткин Валерий Леонидович</option>
+            <option value="9">Феофанов Вадим Александрович</option>
+          </select>
+        </div>
+        <div class="form">
+          <label for="program-select">Название программы</label>
+          <select name="program" id="program-select">
+            <option selected>-- выберите программу --</option>
+            <option value="29">Frontend-разработка</option>
+            <option value="18">Информатика и программирование</option>
+            <option value="5">Яндекс.Лицей Основы программирования на языке Python</option>
+            <option value="6">Яндекс.Лицей Основы промышленного программирования</option>
+          </select>
+        </div>
+      </section>
+      <section class="schedule-title">
+        Расписание занятий преподавателя: <span class="title">Лебедев Константин Игоревич</span>
+      </section>
+      <section class="schedule-grid">
+        <div class="mon day-title">ПН</div>
+        <div class="tue day-title">ВТ</div>
+        <div class="wed day-title">СР</div>
+        <div class="thu day-title">ЧТ</div>
+        <div class="fri day-title">ПТ</div>
+        <div class="sat day-title">СБ</div>
+        <div class="sun day-title">ВС</div>
+        <div class="mon schedule-card">
+          <div class="time">15:25 - 17:05</div>
+          <div class="title">Информатика и программирование</div>
+          <div class="location">пр. Макеева, 39, каб. 209</div>
+        </div>
+        <div class="mon schedule-card">
+          <div class="time">17:15 - 18:55</div>
+          <div class="title">Frontend-разработка</div>
+          <div class="location">пр. Макеева, 39, каб. 209</div>
+        </div>
+        <div class="tue schedule-card">
+          <div class="time">14:30 - 17:05</div> 
+          <div class="title">Яндекс.Лицей Основы промышленного программирования</div>
+          <div class="location">ул. Ст.Разина, 4, каб. 9</div>
+        </div>
+        <div class="tue schedule-card">
+          <div class="time">17:15 - 19:50</div> 
+          <div class="title">Яндекс.Лицей Основы программирования на языке Python</div>
+          <div class="location">ул. Ст.Разина, 4, каб. 9</div>
+        </div>
+        <div class="wed schedule-card">
+          <div class="time">18:10 - 19:50</div>
+          <div class="title">Информатика и программирование</div>
+          <div class="location">ул. Ст.Разина, 4, каб. 10</div>
+        </div>
+        <div class="thu schedule-card">
+          <div class="time">15:25 - 17:05</div>
+          <div class="title">Информатика и программирование</div>
+          <div class="location">пр. Макеева, 39, каб. 209</div>
+        </div>
+        <div class="thu schedule-card">
+          <div class="time">17:15 - 18:55</div> 
+          <div class="title">Frontend-разработка</div>
+          <div class="location">пр. Макеева, 39, каб. 209</div>
+        </div>
+        <div class="sat schedule-card">
+          <div class="time">12:40 - 14:20</div>
+          <div class="title">Информатика и программирование</div>
+          <div class="location">ул. Ст.Разина, 4, каб. 10</div>
+        </div>
+        <div class="sat schedule-card">
+          <div class="time">14:30 - 17:05</div> 
+          <div class="title">Яндекс.Лицей Основы промышленного программирования</div>
+          <div class="location">ул. Ст.Разина, 4, каб. 9</div>
+        </div>
+        <div class="sat schedule-card">
+          <div class="time">17:15 - 19:50</div>
+          <div class="title">Яндекс.Лицей Основы программирования на языке Python</div>
+          <div class="location">ул. Ст.Разина, 4, каб. 9</div>
+        </div>
+      </section>
     </main>
 
     <footer>© Специально для IT-Фест 2024</footer>
