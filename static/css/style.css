@@ -1,0 +1,160 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.rubik-600 {
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+  fill: aliceblue;
+}
+
+.header-top {
+  background-color: #127abf9f;
+  color: aliceblue;
+}
+
+.header-img img {
+  width: 100%;
+}
+
+.menu-nav {
+  position: sticky;
+  top: 0px;
+  background-color: #127abf9f;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  color: aliceblue;
+}
+
+.menu-nav a,
+.header-info a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.menu-nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+    transition: line-height 0.5s, color 0.5s;
+}
+
+.menu-nav li {
+  display: inline-block;
+  transition: background-color 1s;
+  padding: 15px 35px;
+}
+
+.menu-nav li:hover {
+  background-color: #a7d9fc9c;
+}
+
+.menu-button {
+  display: none;
+  border: none;
+  background: none;
+  color: aliceblue;
+  transition: background-color 1s;
+  padding: 15px 35px;
+  fill: aliceblue;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.menu-button span {
+  margin-left: 15px;
+}
+
+.menu-button:hover {
+  background-color: #a7d9fc9c;
+}
+
+@media (max-width: 975px) {
+  .menu-nav ul {
+    display: none;
+    line-height: 0;
+    color: transparent;
+  }
+
+  .menu-nav .menu-button {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .menu-button.active ~ ul {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 412px) {
+  .menu-nav ul {
+    display: none;
+    line-height: 0;
+    color: transparent;
+  }
+
+  .menu-nav .menu-button {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .menu-button.active ~ ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;    
+    text-align: center;
+    height: 100vh;
+    line-height: 2;
+    background-color: #127abf;
+  }
+}
+
+
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  height: 50px;
+  background-color: #127abf9f;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  .header-info {
+    display: none;
+  }
+}
