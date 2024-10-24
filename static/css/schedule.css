@@ -1,0 +1,32 @@
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.mon {
+    grid-column: 2;
+}
+
+.tue {
+    grid-column: 3;
+}
+
+.wed {
+    grid-column: 4;
+}
+
+.thu {
+    grid-column: 5;
+}
+
+.fri {
+    grid-column: 6;
+}
+
+.sat {
+    grid-column: 7;
+}
+
+.sun {
+    grid-column: 8;
+}
